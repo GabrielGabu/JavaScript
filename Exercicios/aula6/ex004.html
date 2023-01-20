@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio3</title>
+    <style>
+        body {
+            background: rgb(150, 97, 97);
+        }
+        .container h1 {
+            font-size: 2em;
+            color: aqua;
+        }
+        .container p {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        document.write(`Olá ${nome}, seu nome tem ${nome.length} letras.<br>` )
+        //Vai escrever na pagina() Var.length irá mostrar quantas letras tem na declaração.
+
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()} <br>`) 
+        //Var.toUpperCase() Transforma todas as letras em maiúsculo.
+
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}<br>`)
+        //Var.toLowerCase() Transforma todas as letras em minúsculo.
+</script>
+</body>
+</html>
