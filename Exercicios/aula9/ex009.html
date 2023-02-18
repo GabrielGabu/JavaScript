@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao DOM</title>
 </head>
+    <style>
+        body {
+            background: rgb(129, 129, 129);
+            color: antiquewhite;
+            font: normal 19px arial;
+        }
+        #arroz {
+            color: green;
+            cursor: pointer;
+        }
+    </style>
 <body>
-    <main>
+    <div>
+        <h1>Iniciando estudos em Dom</h1>
+        <p>Aqui vai o resultado</p>
+        <p id="arroz">Aprendendo a usar o <strong>DOM</strong> em javascript </p>
+        <a href="#">Clique em mim</a> 
+    </div>
+    <br>
+    
+    <script>
+        /*
+        var p1 = document.getElementsByTagName ('p') [0] //seletor de tag 'p'
+        p1.innerText = 'Mudando o paragrafo' // Forma de mudar o texto presente no texto de acordo com a tag
         
-    </main>
+        var p2 = document.getElementById ('arroz') //seletor de id
+        p2.innerText = 'Mudando o segundo paragrafo' //Forma de mudar o texto presente no texto de acordo com o id
+        */
+       var d = window.document.querySelector('#arroz') // seletor de id/class 
+       d.style.background = 'red'
+    </script>
 </body>
 </html>
