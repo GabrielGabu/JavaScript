@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Qual sua nacionalidade ?</h1>
+    <input type="text" name="pais" id="pais" placeholder="Digite o seu pais">
+    <button onclick="descobrir()">descobrir</button> 
+    <div id="desc"></div>
+
+    <script>
+        function descobrir() {
+            var paises = document.getElementById('pais');
+            var valorp = (paises.value); // Necessario usar o .value para acessar o valor do input
+            var desc = document.getElementById('desc'); // Necessario para pegar e usar essa area
+            
+            if (valorp  =='Brasil' || valorp =='brasil' ) { // Brasil ou brasil vai exibir a mensagem abaixo
+                desc.innerHTML = `<p>Você mora no <strong>${valorp}</strong>, então é brasileiro.</p>`
+            } else { // Qualquer outro valor ira exibir a mensagem abaixo 
+                desc.innerHTML = `<p>Você mora no <strong>${valorp}</strong>, nem sei onde é isso.</p>`
+            };
+        }
+    </script>
+</body>
+</html>

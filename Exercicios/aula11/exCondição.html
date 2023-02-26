@@ -1,0 +1,71 @@
+<!--<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consoante ou Vogal</title>
+</head>
+<body>
+    <p>Digite apenas UM caractere :</p>
+    <input id="char" type="text"> <br>
+    <button onclick="check()">Checar</button>
+
+    <script type="text/javascript">
+       function check() {
+        var letra = document.getElementById("char").value;
+        letra = letra.toLowerCase();
+
+        if (letra=='a' || letra=='e' || letra=='i' || letra=='o' || letra=='u')
+        alert ('vogal');
+        else 
+        alert ('consoante');
+       }
+    </script>
+</body>
+</html>    
+
+O usuario coloca um caractere e o algoritmo verifica se é vogal ou consoante.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de nota dos alunos</title>
+</head>
+<body>
+    <p>Coloque a nota do aluno :</p>
+    <input type="Number" name="nota1" id="Nota1">
+    <p>Coloque a outra nota : </p>
+    <input type="number" name="nota2" id="Nota2">
+    <br> <br>
+    <button onclick="Resultado()">Enviar</button>
+
+    <script>
+        function Resultado() {
+
+        var nota1 = document.getElementById('Nota1'); 
+        //var nota1 = Number(document.getElementById('Nota1')); Uma forma mais limpa, tornando dispensavel var n1ta
+        var nota2 = document.getElementById('Nota2');
+        var n1ta = Number (nota1.value);
+        var n2ta = Number (nota2.value);
+        var s = (n1ta + n2ta) / 2;
+            
+      if (s >= 7 && s <=9){
+        alert (`Aprovado, media : ${s}`)
+      } 
+      else if (s == 10) {
+        alert (`Aprovado com honra, media : ${s}`)
+      }
+      else {
+        alert ('Reprovado, media : ' + s)
+      }
+            
+      } // Descobrir a media do aluno.
+    </script>
+
+</body>
+</html>

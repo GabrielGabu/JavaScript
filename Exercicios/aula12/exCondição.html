@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual o seu horario de estudo ?</h1>
+    <p>Coloque <strong>M</strong> para matutino, <strong>V</strong> para vespertino ou <strong>N</strong> para noturno</p>
+    <input type="text" name="horario" id="horario" maxlength="1">
+    <button onclick="Descobrir()">!</button>
+    <script>
+        function Descobrir () {
+            var hr = document.getElementById('horario');
+            var ValorHr = (hr.value)
+            
+            if ( ValorHr == 'M' || ValorHr == 'm')  {
+                alert (`Você digitou ${ValorHr}, então, Bom dia !`);
+            } 
+            else if (ValorHr == 'V' || ValorHr == 'v') {
+                alert (`Você digitou ${ValorHr}, então, Boa tarde !`)
+            } 
+            else if (ValorHr == 'N' || ValorHr == 'n' ){
+                alert (`Você digitou ${ValorHr}, então, Boa note !`)
+            }
+            else  {
+                alert (`O valor ${ValorHr} é invalido, tente novamente.`);
+            }
+        }
+
+    </script>
+</body>
+</html>
